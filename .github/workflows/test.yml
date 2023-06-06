@@ -1,0 +1,21 @@
+name: Run a workflow on MacOS
+on:
+  workflow_dispatch:
+
+jobs:
+  test-12:
+    name: test-12
+    runs-on: macos-12-xl
+    steps:
+    - name: Hello world
+      run: |
+        sleep 120
+        echo 12
+  test-13:
+    name: test-13
+    runs-on: macos-13-xl
+    steps:
+    - name: Hello world
+      run: |
+        sleep 120
+        echo 13
